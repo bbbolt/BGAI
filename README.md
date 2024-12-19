@@ -1,8 +1,8 @@
-# ACT
+# BGAI
 
-Asymmetric Content-aided Transformer for Efficient Image Super-Resolution
+Broadcast-Gated Attention with Identity Adaptive Integration for Efficient Image Super-Resolution
 
-Qian Wang, Yanyu Mao, Ruilong Guo, Yao Tang, Jing Wei, Bo Quan
+Qian Wang, Yanyu Mao, Ruilong Guo, Mengyang Wang, Jing Wei
 
 ## 💻Environment
 
@@ -29,34 +29,32 @@ The input and output paths of cropped pictures can be modify in this script. Def
 
 ## 🚀Train
 
-▶️ You can change the training strategy by modifying the configuration file. The default configuration files are included in ./options/train/ACT. Take one GPU as the example.
+▶️ You can change the training strategy by modifying the configuration file. The default configuration files are included in ./options/train/BGAI. Take one GPU as the example.
 
 ```python
 ### Train ###
-### ACT ###
-python train.py -opt ./options/train/ACT/train_act_x2.yml --auto_resume  # ×2
-python train.py -opt ./options/train/ACT/train_act_x3.yml --auto_resume  # ×3
-python train.py -opt ./options/train/ACT/train_act_x4.yml --auto_resume  # ×4
+### BGAI ###
+python train.py -opt ./options/train/BGAI/train_BGAI_x2.yml --auto_resume  # ×2
+python train.py -opt ./options/train/BGAI/train_BGAI_x3.yml --auto_resume  # ×3
+python train.py -opt ./options/train/BGAI/train_BGAI_x4.yml --auto_resume  # ×4
 ```
 
 For more training commands, please check the docs in [BasicSR](https://github.com/XPixelGroup/BasicSR)
 
 ## 🚀Test
 
-▶️ You can modify the configuration file about the test, which is located in ./options/test/ACT. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. 
-
-▶️ We will publish all ACT and HARN (tiny variant for [NTIRE2024 ESR](https://arxiv.org/abs/2404.10343)) pre-trained models.
+▶️ You can modify the configuration file about the test, which is located in ./options/test/BGAI. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. 
 
 ```python
 ### Test ###
-### ACT for Lightweight Image Super-Resolution ###
-python basicsr/test.py -opt ./options/test/ACT/test_act_x2.yml  # ×2
-python basicsr/test.py -opt ./options/test/ACT/test_act_x3.yml  # ×3
-python basicsr/test.py -opt ./options/test/ACT/test_act_x4.yml  # ×4
+### BGAI for Lightweight Image Super-Resolution ###
+python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_x2.yml  # ×2
+python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_x3.yml  # ×3
+python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_x4.yml  # ×4
 
-### ACT for Large Image Super-Resolution ###
+### BGAI for Large Image Super-Resolution ###
 ### Flicker2K  Test2K  Test4K  Test8K ###
-python basicsr/test.py -opt ./options/test/ACT/test_act_large.yml  # large image
+python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_large.yml  # large image
 
 ```
 
