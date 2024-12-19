@@ -55,7 +55,6 @@ python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_x4.yml  # ×4
 ### BGAI for Large Image Super-Resolution ###
 ### Flicker2K  Test2K  Test4K  Test8K ###
 python basicsr/test.py -opt ./options/test/BGAI/test_BGAI_large.yml  # large image
-
 ```
 
 ## 🚩Results
