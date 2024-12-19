@@ -2,7 +2,7 @@
 
 Broadcast-Gated Attention with Identity Adaptive Integration for Efficient Image Super-Resolution
 
-Qian Wang, Yanyu Mao, Ruilong Guo, Mengyang Wang, Jing Wei
+Qian Wang, Yanyu Mao, Ruilong Guo, Mengyang Wang, Jing Wei, Han Pan
 
 ## 💻Environment
 
