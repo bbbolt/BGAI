@@ -29,8 +29,8 @@ The input and output paths of cropped pictures can be modify in this script. Def
 
 ## 📜Implementation details
 
-
 Hyperparameter  | Configuration  
+---- | -----
 BAG    | 4
 BRAB(Each BAG)  | 2
 Feature Channel Dimension | 52
