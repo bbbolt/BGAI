@@ -54,7 +54,7 @@ For more training commands, please check the docs in [BasicSR](https://github.co
 
 ## 🚀Test
 
-▶️ You can modify the configuration file about the test, which is located in ./options/test/BGAI. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. 
+▶️ You can modify the configuration file about the test, which is located in ./options/test/BGAI. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. The pre-training weights for our model are saved in the Premodel folder.
 
 ```python
 ### Test ###
