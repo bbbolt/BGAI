@@ -27,6 +27,16 @@ python extract_subimages.py
 
 The input and output paths of cropped pictures can be modify in this script. Default location: ./datasets/DIV2K.
 
+## 📜Implementation details
+
+Hyperparameter  | Configuration  
+BAG    | 4
+BRAB(Each BAG)  | 2
+Feature Channel Dimension | 52
+Minibatch Size(train) | 64
+
+Patches of 64 × 64 pixels are randomly cropped from LR images as input. The model is optimized by minimizing the L1 loss through the Adam optimizer with β1 = 0.9, β2 = 0.999. The initial learning rate is set to be 5×10−4 with a multistep scheduler in 500k and is reduced by half at the (250k,400k,450k,475k)-th iterations.
+
 ## 🚀Train
 
 ▶️ You can change the training strategy by modifying the configuration file. The default configuration files are included in ./options/train/BGAI. Take one GPU as the example.
