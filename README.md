@@ -27,7 +27,7 @@ python extract_subimages.py
 
 The input and output paths of cropped pictures can be modify in this script. Default location: ./datasets/DIV2K.
 
-## 📜Implementation details
+## 📜Implementation Details
 
 Patches of 64 × 64 pixels are randomly cropped from LR images as input. The model is optimized by minimizing the L1 loss through the Adam optimizer with β1 = 0.9, β2 = 0.999. The initial learning rate is set to be 5×10−4 with a multistep scheduler in 500k and is reduced by half at the (250k,400k,450k,475k)-th iterations.
 
@@ -54,7 +54,7 @@ For more training commands, please check the docs in [BasicSR](https://github.co
 
 ## 🚀Test
 
-▶️ You can modify the configuration file about the test, which is located in ./options/test/BGAI. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. The pre-training weights for our model are saved in the Premodel folder.
+▶️ You can modify the configuration file about the test, which is located in ./options/test/BGAI. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. The pre-training weights for our model are saved in the Pretrain_Models folder.
 
 ```python
 ### Test ###
